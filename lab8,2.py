@@ -12,7 +12,7 @@ try:
         A1 = float(input('Введите значение A:'))
         B1 = float(input('Введите значение B:'))
         C1 = float(input('Введите значение C:'))
-        CCC = SortDec3(A=A1, B=B1, C=C1)
+        CCC = SortDec3(A1, B1, C1)
         print(CCC)
 except ValueError:
     print('Введите корректные данные!!!')
