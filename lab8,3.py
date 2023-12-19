@@ -13,10 +13,13 @@ def Max(mas, leftMas, rightMas):
     else:
         return max_left
 
-mas = []
-count = int(input("Введите количество рандомных чисел: "))
-for i in range(1, count+1):
-    mas.append(random.randint(-100, 100))
-n = len(mas)
-print(mas)
-print(f'Max: {Max(mas, 0, n - 1)}')
+try:
+    mas = []
+    count = int(input("Введите количество рандомных чисел: "))
+    for i in range(1, count+1):
+        mas.append(random.randint(-100, 100))
+    n = len(mas)
+    print(mas)
+    print(f'Max: {Max(mas, 0, n - 1)}')
+except ValueError:
+    print('Введите корректные данные!')

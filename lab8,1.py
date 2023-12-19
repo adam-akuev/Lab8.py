@@ -14,12 +14,15 @@ def RAST(x, y, TRI):
 
     return (min_distance)
 
-TRI = []
-for i in range(3):
-    Ver1 = (random.randint(0, 15), random.randint(0, 15))
-    TRI.append(Ver1)
-x = float(input('Введите координаты точки X: '))
-y = float(input('Введите координаты точки Y: '))
-S = RAST(x, y, TRI)
-print(TRI)
-print(S)
+try:
+    TRI = []
+    for i in range(3):
+        Ver1 = (random.randint(0, 15), random.randint(0, 15))
+        TRI.append(Ver1)
+    x = float(input('Введите координаты точки X: '))
+    y = float(input('Введите координаты точки Y: '))
+    S = RAST(x, y, TRI)
+    print(TRI)
+    print(S)
+except ValueError:
+    print('Введите корректные данные!')
